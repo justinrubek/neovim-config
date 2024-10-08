@@ -6,7 +6,8 @@
   mkRequireBind = {
     module,
     cmd,
-  }: helpers.mkRaw "function() require(\"${module}\").${cmd}() end";
+  }:
+    helpers.mkRaw "function() require(\"${module}\").${cmd}() end";
   mkCmdBind = {cmd}: "<cmd>${cmd}<cr>";
 
   binds = {

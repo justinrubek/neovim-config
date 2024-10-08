@@ -3,6 +3,10 @@
   self,
   ...
 }: {
+  imports = [
+    inputs.git-hooks.flakeModule
+    ./formatting.nix
+  ];
   perSystem = {self', ...}: {
     pre-commit = {
       check.enable = true;

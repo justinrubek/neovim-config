@@ -1,21 +1,3 @@
-doc/index.html
-
-# Result of bud commands
-vm
-iso
-doi
-
-pkgs/_sources/.shake*
-
-result
-result*
 .direnv
 .pre-commit-config.yaml
-**/.terraform
-content*.tar.gz
-create_config_version.json
-**/config.tf.json
-
-.env
-
-**/packer-manifest.json
+/result

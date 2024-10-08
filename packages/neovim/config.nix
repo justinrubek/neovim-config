@@ -171,7 +171,7 @@
         tailwindcss.enable = true;
         terraformls.enable = true;
         texlab.enable = true;
-        tsserver.enable = true;
+        ts-ls.enable = true;
       };
 
       # onAttach = ''
@@ -184,6 +184,11 @@
     lspsaga.enable = true;
     lualine.enable = true;
     luasnip.enable = true;
+    mini = {
+      enable = true;
+      modules.icons = {};
+      mockDevIcons = true;
+    };
     none-ls = {
       enable = true;
       sources = {
@@ -192,7 +197,7 @@
         };
       };
     };
-    surround.enable = true;
+    vim-surround.enable = true;
     telescope.enable = true;
     todo-comments.enable = true;
     treesitter = {
