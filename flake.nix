@@ -24,13 +24,23 @@
     git-hooks.url = "github:cachix/git-hooks.nix";
     systems.url = "github:nix-systems/default";
   };
+
   outputs = inputs:
-    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+    inputs.flake-parts.lib.mkFlake {inherit inputs;} ({flake-parts-lib, ...}: let
+      inherit (flake-parts-lib) importApply;
+
+      flakeModules.default = importApply ./flake-parts/flake-module.nix {inherit (inputs) nixvim;};
+    in {
       systems = import inputs.systems;
       imports = [
+        flakeModules.default
         ./flake-parts/pre-commit.nix
         ./flake-parts/shells.nix
         ./packages/neovim
       ];
-    };
+
+      flake = {
+        inherit flakeModules;
+      };
+    });
 }
