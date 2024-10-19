@@ -159,11 +159,11 @@
         };
         html.enable = true;
         jsonls.enable = true;
-        lua-ls.enable = true;
+        lua_ls.enable = true;
         marksman.enable = true;
-        nil-ls.enable = true;
+        nil_ls.enable = true;
         pyright.enable = true;
-        rust-analyzer = {
+        rust_analyzer = {
           enable = true;
           installCargo = false;
           installRustc = false;
@@ -171,7 +171,7 @@
         tailwindcss.enable = true;
         terraformls.enable = true;
         texlab.enable = true;
-        ts-ls.enable = true;
+        ts_ls.enable = true;
       };
 
       # onAttach = ''
