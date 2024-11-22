@@ -8,6 +8,14 @@
     ./which-key.nix
   ];
 
+  autoCmd = [
+    {
+      event = "FileType";
+      pattern = "helm";
+      command = "LspRestart";
+    }
+  ];
+
   clipboard = {
     register = "unnamedplus";
     providers = {
@@ -113,6 +121,7 @@
     efmls-configs.enable = true;
     friendly-snippets.enable = true;
     fugitive.enable = true;
+    helm.enable = true;
     indent-blankline = {
       enable = true;
       settings = {
