@@ -115,8 +115,10 @@
     comment.enable = true;
     cursorline = {
       enable = true;
-      cursorline.enable = false;
-      cursorword.enable = true;
+      settings = {
+        cursorline.enable = false;
+        cursorword.enable = true;
+      };
     };
     efmls-configs.enable = true;
     friendly-snippets.enable = true;
