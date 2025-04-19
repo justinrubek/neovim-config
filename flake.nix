@@ -18,8 +18,8 @@
     };
     nixpkgs.url = "nixpkgs/nixos-unstable";
     nixvim = {
-      url = "github:pta2002/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/nixvim";
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
     git-hooks.url = "github:cachix/git-hooks.nix";
     systems.url = "github:nix-systems/default";
