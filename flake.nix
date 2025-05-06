@@ -5,13 +5,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
-    ghlink = {
-      url = "github:matthewdargan/ghlink";
-      inputs = {
-        fenix.follows = "fenix";
-        nixpkgs.follows = "nixpkgs";
-      };
-    };
     nix-go = {
       url = "github:matthewdargan/nix-go";
       inputs.nixpkgs.follows = "nixpkgs";

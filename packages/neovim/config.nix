@@ -253,6 +253,5 @@
   extraPackages = [
     pkgs.nodejs
     pkgs.python310
-    inputs'.ghlink.packages.ghlink
   ];
 }
